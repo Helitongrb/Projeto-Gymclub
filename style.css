@@ -1,0 +1,866 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.borde {
+    border-bottom: 2px solid dodgerblue;;
+}
+
+.flexcolum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacebtn {
+    width: 400px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 5px;
+
+    color: white;
+    background-color: dodgerblue;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    
+}
+
+.mm_line {
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+/*-----------------------------HEADER---------------------*/
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 50px;  
+    width: 250px;
+    
+}
+.menu {
+    
+    display: flex;
+    width: 100vw;
+    justify-content: end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.nav {
+    height: 80px;
+    display: flex;
+    width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    padding-right: 20px;
+}
+
+
+.nav ul, a:hover{
+    border-bottom: 2px solid dodgerblue;
+}
+ul a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+.contact i {
+    padding: 5px;
+    margin-top: 2px;
+}
+.contact i:hover {
+    border: 2px solid dodgerblue;
+    border-radius: 2px;
+    color: dodgerblue;
+}
+
+
+/*-----------------------------SECTION BANNER---------------------*/
+
+
+
+#banner {
+    background-image: url(IMAGENS/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text h1{
+    font-size: 80px;
+    color: white;
+    text-shadow: 1px 2px 0px black;
+    
+}
+
+.text h2{
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 2px 0px black;
+    
+}
+#group_classes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group {
+    width: 100vw;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active{
+    width: 50px;
+    height: 2px;
+    background-color: dodgerblue;
+    margin-bottom: 10px;
+}
+
+.title {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1 {
+    font-weight: 500;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.classes {
+    width: 1000px;
+    height: 550;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1, .box2, .box3 {
+    background-color: rgb(250, 248, 248);
+    width: 300px;
+    height: 550px;
+    border: 1px solid rgba(201, 198, 198, 0.671);
+    border-radius: 5px;
+    border-bottom: 3px solid dodgerblue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.image1 {
+    background-image: url(IMAGENS/image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.image2 {
+    background-image: url(IMAGENS/image2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.image3 {
+    background-image: url(IMAGENS/image3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.containerbox{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box1, .box2, .box3, h3{
+    font-size: 20px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.box1, .box2, .box3, p {
+    font-size: 17px;
+    letter-spacing: normal;
+    
+}
+
+
+/*-----------------------------SECTION PRICINGS---------------------*/
+
+#pricing {
+    width: 100vw;
+    height: 750px;
+    background-color: rgba(235, 230, 230, 0.671);
+    display: flex;
+    justify-content: center;
+}
+
+.totalbox {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.totalbox .title {
+    padding-top: 50px;
+}
+
+.prices {
+    height: 500px;
+    width: 900px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.span {
+    background-color: dodgerblue;
+    width: 130px;
+    height: 130px;
+   
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 61px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    
+}
+a {
+    text-decoration: none;
+}
+
+.btn {
+    height: 50px;
+    width: 200px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 500;
+    
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*--------------------------------1---------------------------------*/
+
+
+.price1 {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 30px 0px 50px;
+}
+.price1 .aba1  {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(245, 247, 247);
+    border-radius: 16px 16px 0px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.aba1 p {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.price1 .aba2  {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(245, 247, 247);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+
+.price1 .aba3  {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(245, 247, 247);
+    border-radius: 0px 0px 16px 16px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.span h1 {
+    color: white;
+    font-size: 28px;
+    padding: 5px;
+    
+}
+.span p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+
+/*--------------------------------2---------------------------------*/
+
+
+.price2 {
+    width: 250px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 30px 0px 0px;
+    
+}
+.price2 .aba1  {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(245, 247, 247);
+    border-radius: 16px 16px 0px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.158);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center; 
+}
+
+.price2 h1{
+    font-size: 20px;
+}
+.price2 p{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px;
+}
+.price2 .aba2  {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(245, 247, 247);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.158);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+}
+.price2 .aba3  {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(245, 247, 247);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.158);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------------------------3------------------------------*/
+
+
+.price3 {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price3 .aba1  {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(245, 247, 247);
+    border-radius: 16px 16px 0px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+.price3 .aba2  {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(245, 247, 247);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.price3 .aba3  {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(245, 247, 247);
+    border-radius: 0px 0px 16px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*---------------------------IMAGEM---------------------------*/
+
+#image {
+    width: 100vw;
+    height: 600px;
+
+    background: url(IMAGENS/image4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---------------------------CONTACT---------------------------*/
+
+
+#contact {
+    width: 100vw;
+    height: 500px;
+    background-color: rgba(235, 230, 230, 0.671);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.info {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+.info  p {
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+.info .i a {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: dodgerblue;
+ }
+
+ .i:hover{
+    border-bottom: 2px solid dodgerblue;
+ }
+
+form {
+    width: 450px;
+    margin: 20px;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.containerform {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p1 input {
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+
+}
+
+.p2 input {
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.p3 input {
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 15px;
+}
+input {
+    border: 1.5px solid rgb(207, 205, 205);
+}
+
+ input:active,  input:focus {
+
+    border: 2px solid dodgerblue;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
+    outline: 0; /*tira borda interna do input*/
+}
+
+/*---------------------------MAPS--------------------------*/
+
+#map {
+    display: flex;
+    
+}
+
+#map iframe {
+    width: 100vw;
+    height: 500px;
+}
+/*---------------------------FOOTER--------------------------*/
+
+footer {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.copy h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.copy p {
+    font-size: 15px;
+}
+
+/*---------------------------MEDIA QUERIES--------------------------*/
+
+@media  (max-width:600px) {
+    
+    header {
+        height: auto;
+    }
+    .logo {
+        width: 375px;
+    }
+    .logo h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        background: white;
+        width: 100vw;
+        top: 109px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    nav ul li {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    .nav ul, a:hover{
+        border-bottom: 2px solid dodgerblue;
+        
+    }
+    
+    .contact {
+        display: none;
+    
+    }
+    #banner {
+        height: 50vh;
+    }
+    
+    .text h1 {
+        font-size: 55px;
+        
+    }
+    .text h2 {
+        font-size: 37px;
+        
+    }
+
+    #group_classes {
+        height: 1500px;
+        align-items: start;
+    }
+
+    .group {
+        justify-content: top;
+    }
+
+    .classes {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box1, .box2, .box3 {
+        height: 400px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .containerbox h3{
+        font-size: 16px;
+    }
+    .containerbox p{
+        font-size: 13px;
+    }
+
+    #pricing {
+        height: auto;
+        align-items: start;
+    }
+
+    #pricing .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .totalbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        
+    }
+    .totalbox .title {
+        padding-top: 25px;
+    }
+    #pricing .active {
+        margin-bottom: 330px;
+    }
+
+    .prices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+
+    .price1, .price2, .price3 {
+        height: 400px;
+        margin: 0;
+        padding: 0;
+        box-shadow: 2px 2px 2px solid rgba(0, 0, 0, 0.158);
+    }
+
+    .aba1, .aba2, .aba3 {
+        height: 70px;
+    }
+
+    .aba1 p {
+        font-weight: 600;
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+
+    .aba2 p {
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+
+    .prices h1 {
+        font-size: 15px;
+    }
+
+    .span {
+       
+        width: 109px;
+        height: 110px;
+        top: 37px;
+        left: 77px;
+        
+    }
+
+    #image {
+        height: 800px;
+        background-position: right;
+    }
+
+    #contact {
+        width: 100vw;
+        height: 676px;
+        background-color: rgba(235, 230, 230, 0.671);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contatc .title {
+        padding-top: 10px;
+    }
+
+    .cnt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copy h1 {
+        font-size: 15px;
+    }
+
+    .copy p {
+        font-size: 13px;
+    }
+
+
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
