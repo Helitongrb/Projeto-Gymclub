@@ -665,7 +665,7 @@ footer {
 
 /*---------------------------MEDIA QUERIES--------------------------*/
 
-@media  (max-width:600px) {
+@media (min-width:500px) and (max-width:667px) {
     
     header {
         height: auto;
@@ -734,6 +734,8 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        max-width: 550px;
+        
     }
 
     .box1, .box2, .box3 {
@@ -750,7 +752,7 @@ footer {
     }
 
     #pricing {
-        height: auto;
+        height: 1500px;
         align-items: start;
     }
 
@@ -780,7 +782,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-    
+        max-width: 550px;
     }
 
     .price1, .price2, .price3 {
@@ -850,17 +852,228 @@ footer {
     }
 
 
-    
+
     }
+
+    @media (min-width:320px) and (max-width:499px) {
     
+        header {
+            height: auto;
+        }
+        .logo {
+            width: 300px;
+        }
+        .logo h1 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .menuMobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        nav ul {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            background: white;
+            width: 100vw;
+            top: 109px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    
+        nav ul li {
+            font-size: 25px;
+            padding-left: 20px;
+        }
+        .nav ul, a:hover{
+            border-bottom: 2px solid dodgerblue;
+            
+        }
+        
+        .contact {
+            display: none;
+        
+        }
+        #banner {
+            height: 50vh;
+        }
+        
+        .text h1 {
+            font-size: 33px;
+            
+        }
+        .text h2 {
+            font-size: 23px;
+            
+        }
+    
+        #group_classes {
+            height: 1500px;
+            align-items: start;
+        }
+    
+        .group {
+            justify-content: top;
+        }
+    
+        .classes {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 320px;
+            
+        }
+    
+        .box1, .box2, .box3 {
+            height: 400px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .containerbox h3{
+            font-size: 16px;
+        }
+        .containerbox p{
+            font-size: 13px;
+        }
+    
+        #pricing {
+            height: 1500px;
+            align-items: start;
+        }
+    
+        #pricing .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .totalbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            
+        }
+        .totalbox .title {
+            padding-top: 25px;
+        }
+        #pricing .active {
+            margin-bottom: 330px;
+        }
+    
+        .prices {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 320px;
+        }
+    
+        .price1, .price2, .price3 {
+            height: 400px;
+            margin: 0;
+            padding: 0;
+            box-shadow: 2px 2px 2px solid rgba(0, 0, 0, 0.158);
+        }
+    
+        .aba1, .aba2, .aba3 {
+            height: 70px;
+        }
+    
+        .aba1 p {
+            font-weight: 600;
+            font-size: 15px;
+            padding-bottom: 5px;
+        }
+    
+        .aba2 p {
+            font-size: 13px;
+            padding-bottom: 5px;
+        }
+    
+        .prices h1 {
+            font-size: 15px;
+        }
+    
+        .span {
+           
+            width: 109px;
+            height: 110px;
+            top: 37px;
+            left: 77px;
+            
+        }
+    
+        #image {
+            height: 800px;
+            background-position: right;
+        }
+    
+        #contact {
+            width: 100vw;
+            height: 676px;
+            background-color: rgba(235, 230, 230, 0.671);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #contatc .title {
+            padding-top: 10px;
+        }
+    
+        .cnt {
+            display: flex;
+            flex-direction: column;
+            max-width: 320px;
+        }
+        .info {
+            max-width: 320px;
+            margin: auto;
+        }
+    
+        .copy h1 {
+            font-size: 13px;
+            padding: 5px;
+        }
+    
+        .copy p {
+            font-size: 11px;
+            padding-left: 5px;
+        }
 
+        form {
+            width: 300px;
+            margin: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
 
+       .p1 input {
+        max-width: 130px;
+       }
 
+       .p2 input {
+        max-width: 270px;
+       }
+       .p3 input {
+        max-width: 270px;
+       }
 
+       .spacebtn  {
+        max-width: 270px;
+       }
+    
+       
+    
+        }
 
-
-
-
-
-
-
+   
+    
